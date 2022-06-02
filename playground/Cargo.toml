@@ -9,13 +9,23 @@ edition = "2021"
 actix              = '0.13.0'
 rand               = '0.8.5'
 actix-rt           = '2.7.0'
-attempts           = {path = '../attempts'}
 sb-backend-3-actix = {path = '../sb-backend-3-actix'}
+rdkafka            = '0.28.0'
 
 [[bin]]
-name =  "main"
-path = 'src/main.rs'
+name =  "main"          # <- This is the executable name
+path = 'src/main.rs'    # <- This is the path to the executable
 
 [[bin]]
 name =  "main-arb"
 path = "src/main_arb.rs"
+
+[[bin]]
+name =  "main-kfk"
+path = "src/main_kfk.rs"
+
+[[bin]]
+name =  "trait-numbered"
+path = "src/main_trait_numbered.rs"
+
+
